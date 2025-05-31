@@ -143,37 +143,40 @@ header .fa-bars{
     margin: 0;
   }
   
-.shop-section{
-    display:flex;
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: #e2e7e6;
-}
+  }
+.product-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    max-width: 220px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  }
+.product-image {
+    width: 100%;
+    border-radius: 10px;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+.product-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
 
-.box{
-    border:solid black 2px;
-    height:400px;
-    width:23%;
-    background-color: white;
-    padding:20px 0px 15px;
-    margin-top: 15px;
-    
-}
-.box-img{
-    height:300px;
-    background-size: cover;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-.box p{
-  
-  font-weight: bold;
-}
-.box span{
-  color: blue;
-  font-weight: bold;
-  padding-left: 13rem;
-}
 .about .row{
     display: flex;
     align-items:center;
